@@ -25,6 +25,7 @@ function changeH3(){
 
 lastHeading.addEventListener("click", changeH3);
 
+const copyRight =document.querySelector("footer p");
 
 document.body.addEventListener('click', evt => {
     evt.target.classList.toggle('textChange');
@@ -45,41 +46,4 @@ function niceTry(){
 }
 
 p2.addEventListener("dblclick", niceTry);
-
-const p3 = document.querySelector(".text-content:nth-of-type(2) p")
-
-function youThought(){
-    p3.textContent = "You thought!";
-}
-
-p3.addEventListener("dblclick", youThought);
-
-window.addEventListener('keydown', evt => {
-    if(evt.key == "b"){
-        evt.target.classList.toggle("backgroundChange1");
-    }
-})
-
-
-window.addEventListener('keydown', evt => {
-    if(evt.key == "y"){
-        evt.target.classList.toggle("backgroundChange2");
-    }
-})
-
-
-window.addEventListener('keydown', evt => {
-    if(evt.key == "g"){
-        evt.target.classList.toggle("backgroundChange3");
-    }
-})
-
-const a = document.querySelector("a");
-
-function aClick(event){
-    console.log(`It didn't work`);
-    a.preventDefault();
-}
-
-a.addEventListener("click", aClick);
 

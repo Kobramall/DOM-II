@@ -54,32 +54,11 @@ function youThought(){
 
 p3.addEventListener("dblclick", youThought);
 
-window.addEventListener('keydown', evt => {
-    if(evt.key == "b"){
-        evt.target.classList.toggle("backgroundChange1");
+function kKey(event){
+    if( event.key === "Escape"){
+        document.classList.toggle("backgroundChange1");
     }
-})
-
-
-window.addEventListener('keydown', evt => {
-    if(evt.key == "y"){
-        evt.target.classList.toggle("backgroundChange2");
-    }
-})
-
-
-window.addEventListener('keydown', evt => {
-    if(evt.key == "g"){
-        evt.target.classList.toggle("backgroundChange3");
-    }
-})
-
-const a = document.querySelector("a");
-
-function aClick(event){
-    console.log(`It didn't work`);
-    a.preventDefault();
 }
 
-a.addEventListener("click", aClick);
+document.addEventListener("keydown", kKey);
 

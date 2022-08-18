@@ -74,12 +74,3 @@ window.addEventListener('keydown', evt => {
     }
 })
 
-const a = document.querySelector("a");
-
-function aClick(event){
-    console.log(`It didn't work`);
-    a.preventDefault();
-}
-
-a.addEventListener("click", aClick);
-
