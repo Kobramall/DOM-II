@@ -1,7 +1,7 @@
 import './less/index.less'
 
 
-const heading = document.querySelector("h4");
+const heading = document.querySelector("h1");
 
 function changeH1(){
     heading.textContent = "Hello world";
